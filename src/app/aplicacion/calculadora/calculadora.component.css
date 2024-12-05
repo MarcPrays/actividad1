@@ -1,0 +1,13 @@
+.contenedor {
+    margin: 0 auto;
+    text-align: center; 
+    border: 0.2rem black solid;
+    width: 38rem;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 7px black;
+}
+
+.raya {
+    border: 1px black solid;
+    
+}

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Listado de Personas</h1>
+            <!-- Asignando a un atributo de un elemento un valor. Property Binding -->
+            <!-- Event Binding, cuando se ejecuta un evento en especifico, se realiza una logica. -->
+            <button class="btn btn-primary" (click)="agregarPersona()" [disabled]="desabilitar">Agregar Persona</button>
+            <p>{{mensaje}}</p>
+            <app-persona></app-persona>
+            <label for="input-profesion">Titulo Persona</label>
+            <input type="text" class="form-control"
+            [(ngModel)] = 'titulo'>
+            {{titulo}}
+        </div>
+    </div>
+</div>
