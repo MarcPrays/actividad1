@@ -2,28 +2,29 @@
     <div class="contenedor-title">
         <h1>CALCULADORA BASICA</h1>
         <div class="raya"></div>
-        <div class="contenedor-numeros">
-            <form action="">
-                <section>
-                    <label for="numero1">Operando 1: </label>
-                    <input type="number" name="numero1" [(ngModel)] = 'operando1'>
+        <form action="" class="contenedor-numeros">
+            <section class="contenedor-inputs">
+                <label for="numero1">Operando 1: </label>
+                <input type="number" name="numero1" [(ngModel)] = 'operando1'>
 
-                    <div>
-                     <label for="numero2">Operando 2: </label>
-                     <input type="number" name="numero2" [(ngModel)] = 'operando2'>
-                    </div>
-                </section>
-                                            
-                <section>
-                    <button class="btn btn-primary" (click)="sumar()">Sumar</button>
-                    <button class="btn btn-dark" (click)="restar()">Restar</button>
-                    <button class="btn btn-success" (click)="multiplicar()">Multiplicacion</button>
-                    <button class="btn btn-danger" (click)="dividir()">Division</button>
-                </section>
-                
-            </form>
+                <div>
+                 <label for="numero2">Operando 2: </label>
+                 <input type="number" name="numero2" [(ngModel)] = 'operando2'>
+                </div>
+            </section>
+                                        
+            <section class="contenedor-botones">
+                <button class="btn btn-primary" (click)="sumar()">Sumar</button>
+                <button class="btn btn-dark" (click)="restar()">Restar</button>
+                <button class="btn btn-success" (click)="multiplicar()">Multiplicacion</button>
+                <button class="btn btn-danger" (click)="dividir()">Division</button>
+            </section>
+            
+        </form>
+        <div class="contenedor-resultado">
             <label>Resultado: </label>
             {{resultado}}
         </div>
+        
     </div>
 </div>

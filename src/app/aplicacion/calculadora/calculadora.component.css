@@ -11,3 +11,15 @@
     border: 1px black solid;
     
 }
+
+.contenedor-inputs {
+    margin-top: 1.5rem;
+}
+
+.contenedor-botones{
+    margin-top: 1.5rem;
+}
+
+.contenedor-resultado {
+    margin-top: 1.6rem;
+}
